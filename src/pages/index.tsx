@@ -53,7 +53,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     priceId: price.id,
     amount: new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "USD",
+      currency: "usd",
     }).format(price.unit_amount / 100),
   };
 
